@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* variables */
+:root{
+    --blanco: #ffffff;
+    --negro: #00070f;
+    --gris: #434c5a;
+    --morado: #be42f7;
+}
+/* variables */
+
+.inicio{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url(../SRC/fondo_principal.svg);
+}
+
+.inicio-cont{
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.registro-ingreso{
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: 150px;
+}
+.nave{
+    width: 180px;
+    margin-right: auto;
+}
+
+.registro-ingreso h1{
+    color: var(--morado);
+    font-family: arial rounded mt;
+    font-size: 2.8rem;
+    width: fit-content;
+}
+.registro-ingreso-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+.registro-ingreso-btn a{
+    padding: 5px 15px 5px 15px;
+    border-radius: 100vh;
+    color: var(--blanco);
+    font-family: arial rounded mt;
+    font-size: 1.5rem;
+    text-decoration: none;
+    justify-content: center;
+    transition:.2s;
+    width:40%;
+    display: flex;
+    margin: auto;
+}
+
+.btn-r{
+    background-color: #434c5a;
+    border: 3px solid #434c5a;
+}
+.btn-r:hover{
+    color: var(--blanco);
+    border: 3px solid var(--morado);
+    background-color:var(--morado);
+    transition:.2s;
+}
+
+.btn-i{
+    border: 3px solid var(--blanco);
+    color: var(--blanco);
+}
+
+.btn-i:hover{
+    color: var(--morado);
+    border: 3px solid var(--morado);
+    transition:.2s;
+}
