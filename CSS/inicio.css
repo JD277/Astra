@@ -2,7 +2,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #00070f;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #be42f7; 
+    border-radius: 5px; 
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #00070f; 
+  }
 /* variables */
 :root{
     --blanco: #ffffff;
@@ -17,28 +29,44 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-attachment: fixed;
     background-image: url(../SRC/fondo_principal.svg);
 }
 
 .inicio-cont{
-    left: 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin: auto;
     width: 100%;
     height: 100%;
 }
 
 .registro-ingreso{
-    width: fit-content;
-    margin-left: auto; 
-    margin-right: 150px;
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 13em;
 }
 .nave{
-    width: 180px;
-    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+.nave img{
+    display: flex;
+    width: 15em;
+    height: 15em;
+    position: relative;
+    right: 8em;
 }
 
 .registro-ingreso h1{
@@ -48,11 +76,10 @@
     width: fit-content;
 }
 .registro-ingreso-btn{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -62,11 +89,11 @@
     border-radius: 100vh;
     color: var(--blanco);
     font-family: arial rounded mt;
-    font-size: 1.5rem;
+    font-size: 1.4em;
     text-decoration: none;
     justify-content: center;
-    transition:.2s;
-    width:40%;
+    transition: .2s;
+    width: 46%;
     display: flex;
     margin: auto;
 }
@@ -91,4 +118,39 @@
     color: var(--morado);
     border: 3px solid var(--morado);
     transition:.2s;
+}
+
+@media only screen and (min-width:300px) and (max-width:620px){
+    .inicio-cont{
+        flex-direction: column;
+
+    }
+    .registro-ingreso{
+        right: 0em;
+        width: 100%;
+        height: 100%;
+        bottom: 5em;
+    }
+    .registro-ingreso h1{
+        font-size: 2em;
+    }
+    .nave{
+        position: relative;
+        overflow:hidden;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nave img{
+        width: 15em;
+        display: flex;
+        right: 0px;
+    }
+    .registro-ingreso-btn{
+        flex-direction: column;
+    }
+    .registro-ingreso-btn a {
+        font-size: 0.9em;
+        margin-top: 1em;
+    }
 }

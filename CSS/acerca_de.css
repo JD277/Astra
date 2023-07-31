@@ -1,0 +1,96 @@
+/*sección de Astra*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+.astra-sec{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.astra-cont{
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+hr{
+    width: 85%;
+    background: var(--negro);
+    border: none;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.img-pc{
+    display: block;
+    height:100%;
+    width: fit-content;
+    height:fit-content;
+    align-self: flex-end;
+}
+
+.logo{
+    width: 170px;
+    margin-left: 30px;
+    display:block;
+    margin-top: 15px;
+}
+
+.titulo-parrafo{
+    width: 60%;
+    text-align: justify;
+}
+
+.titulo-parrafo h2{
+    font-family:arial rounded mt;
+    border-radius: 100vh;
+    padding: 3px;
+    font-size: 2.5rem;
+    width: fit-content;
+    color:var(--negro);
+    margin-bottom: 20px;
+}
+
+p{
+    font-family:arial rounded mt;
+    color:var(--gris);
+    font-size:1rem;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:300px) and (max-width:620px){
+    .astra-cont{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .titulo-parrafo{
+        width: 100%;
+    }
+
+    .img-pc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .logo{
+        display: flex;
+        margin-left: 0px;
+    }
+
+}
