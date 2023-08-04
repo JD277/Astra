@@ -1,0 +1,47 @@
+/*footer*/
+.columna{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.columna h2{
+    color: var(--blanco);
+    background-color: #00070f;
+    font-family: arial rounded mt;
+    font-size: 2rem;
+}
+.columna a{
+    color: rgb(211, 211, 211);
+    font-family: arial rounded mt;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+}
+.contacto{
+    background-image: url(../SRC/fondo_principal.svg);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.footer{
+    margin-top: auto;
+    background-color: #00070f;
+    padding: 5px 20px 5px 20px;
+    width: 100vw;
+}
+.footer div{
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer div p{
+    font-size: 1rem;
+    color: var(--blanco);
+    font-family: arial;
+}
