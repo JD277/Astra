@@ -7,18 +7,19 @@ main{
     width: 100vw;
 
 }
-.astra-sec{
+.astra-sec, .impulsa-sec, .aprende-sec {
     width: 100vw;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.astra-cont{
+.astra-cont, .impulsa-cont, .aprende-cont{
     width: 70%;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 hr{
     width: 85%;
     background: var(--negro);
@@ -46,7 +47,6 @@ hr{
     display:block;
     margin-top: 15px;
 }
-
 .titulo-parrafo{
     width: 60%;
     text-align: justify;
@@ -70,16 +70,38 @@ p{
     margin-top: 10px;
 }
 
+.impulsa-cont .titulo-parrafo{
+    width: 72%;
+}
+.aprende-cont .titulo-parrafo{
+    width: 100%;
+}
+.aprende-textimg{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2em;
+}
+.aprende-textimg img{
+    margin-right: 40em;
+}
+.aprende-cont .titulo-parrafo h2{
+    text-align: center;
+}
 @media only screen and (min-width:300px) and (max-width:620px){
-    .astra-cont{
+    .astra-cont, .impulsa-cont{
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 
-    .titulo-parrafo{
+    .titulo-parrafo, .impulsa-cont .titulo-parrafo{
         width: 100%;
     }
-
+    .impulsa-cont .titulo-parrafo h2{
+        text-align: center;
+    }
     .img-pc{
         display: flex;
         justify-content: center;
@@ -93,4 +115,12 @@ p{
         margin-left: 0px;
     }
 
+    .aprende-textimg{
+        flex-direction: column;
+        height: 100%;
+    }
+    .aprende-textimg img{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
 }
