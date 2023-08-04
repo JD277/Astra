@@ -1,0 +1,59 @@
+.aprendizaje-sec{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.aprendizaje-cont{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.aprendizaje-eficiente{
+    font-family:arial rounded mt;
+    border-radius: 100vh;
+    padding: 3px;
+    font-size: 2.5rem;
+    width: fit-content;
+    color:var(--negro);
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.contenedor-aprendizaje{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.aprendizaje-img1, .aprendizaje-img3{
+    width: 10em;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.aprendizaje-img2{
+    width: 7.5em;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.aprendizaje-img4{
+    width: 12em;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+@media only screen and (min-width:300px) and (max-width:620px){
+    .contenedor-aprendizaje{
+        flex-direction: column;
+    }
+    .contenedor-aprendizaje img {
+        margin-right: 0;
+    }
+
+}
