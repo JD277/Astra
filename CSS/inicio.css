@@ -25,6 +25,8 @@ body::-webkit-scrollbar {
 /* variables */
 
 .inicio{
+    position: relative;
+    top: 3em;
     width: 100vw;
     height: 100vh;
     display: flex;

@@ -20,7 +20,7 @@ main{
     display: flex;
 }
 
-hr{
+main hr{
     width: 85%;
     background: var(--negro);
     border: none;

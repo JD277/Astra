@@ -1,3 +1,50 @@
+/*Nav*/
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #00070f;
+    border-bottom: 4px solid #a239d3;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3000;
+}
+.logo-box{
+    margin-right: 30px;
+}
+.logo-box a{
+    padding: 5px 15px 5px 15px;
+    border-radius: 100vh;
+    color: var(--blanco);
+    font-family: arial rounded mt;
+    font-size: 1.4em;
+    text-decoration: none;
+    justify-content: center;
+    transition: .2s;
+    width: 100%;
+    display: flex;
+}
+.menu h1{
+    color: var(--morado);
+    font-family: arial rounded mt;
+    font-size: 2.8rem;
+    width: fit-content;
+    margin-left: 1em;
+}
+
+.r-i-nav {
+    display: flex;
+    width: fit-content;
+}
+.r-i-nav-phone{
+    display: none;
+}
+.hamburguesa{
+    display: none;
+}
 /*footer*/
 .columna{
     margin-top: 50px;
@@ -45,3 +92,179 @@
     color: var(--blanco);
     font-family: arial;
 }
+/*Formulario*/
+.formulario {
+    position: fixed;
+    z-index: 2100;
+    background-image: url(../SRC/fondo_principal.svg);
+    padding: 20px;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    z-index: -100;
+    transition: .5s;
+  }
+  
+  .formulario-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    margin-top:60px ;
+    border-radius: 30px;
+  }
+  
+  .input-m p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .input-m {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  
+  .input-m input {
+    width: 100%;
+    padding: 10px;
+    border: 6px solid white;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    background-color: #00070f;
+    color: white;
+  }
+  .formulario .logo-box{
+    width: 70%;
+    margin-left:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .cerrar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    height: 50px;
+    border:5px solid white;
+    overflow: hidden;
+    border-radius: 50px;
+    right: 3em;
+    top: 5em;
+  }
+  .cerrar p {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: white;
+    font-size: 2rem;
+    transition: .5s;
+  }
+  
+ .cerrar:hover{
+    border-color: rgb(239, 74, 74);
+    transition: .5s;
+ }
+
+
+@media only screen and (min-width: 300px) and (max-width: 610px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .columna{
+        width: 100%;
+        height: 100%;
+    }
+    .r-i-nav {
+        display: none;
+    }
+
+    .r-i-nav-phone{
+        display: flex;
+        position: fixed;
+        background-color:#00070fb5;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0;
+        opacity: 0;
+    }
+    .logo-box{
+        position: relative;
+        margin-right: 0px;
+        width: 100%;
+        margin-top: 20px;
+        background-color: none;
+
+    }
+    .logo-box a{
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0;
+        border-bottom: 5px solid white;
+        transition: .2s;
+    }
+    .logo-box .btn-i:hover, .logo-box .btn-r:hover{
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        border-bottom-color:#a239d3 ;
+        color: #a239d3;
+        background-color: transparent;
+        trasition: .2s;
+    }
+    .hamburguesa{
+        display: flex;
+        width: 12%;
+        height: 100%;
+        margin-top: 0;
+        top: 0px;
+        flex-direction:column;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+    .hamburguesa hr{
+        transition: .5s;
+        position: relative;
+        width: 100%;
+        height: 8px;
+        margin-top: 5px;
+        background: white;
+        border-radius: 30px;
+    }
+
+    .formulario .logo-box a{
+    padding: 5px 15px 5px 15px;
+    background-color: #434c5a;
+    border: 3px solid #434c5a;
+    border-radius: 100vh;
+    color: var(--blanco);
+    font-family: arial rounded mt;
+    font-size: 1.4em;
+    text-decoration: none;
+    justify-content: center;
+    transition: .2s;
+    display: flex;
+    }
+    .formulario-cont{
+        width: 100%;
+    }
+    .formulario .logo-box{
+        margin-left: 0px;
+    }
+    .cerrar{
+        right: 1em;
+    }
+    }
+    
