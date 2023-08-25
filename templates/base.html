@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/inicio.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/acerca_de.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/aprendizaje.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/Nav_y_footer.css')}}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="menu">
+        <h1>Astra</h1> 
+        <div class="r-i-nav">
+        <div class="logo-box">
+            <a class="btn-r">Registrarse</a>
+        </div>  
+        <div class="logo-box">
+            <a class="btn-i">Ingresar</a>
+        </div> 
+    </div>
+    <div class="hamburguesa">
+        <hr id="hr1">
+        <hr id="hr2">
+        <hr id="hr3">
+    </div>
+    </nav>
+    <div class="r-i-nav-phone" id="menu">
+        <div class="logo-box">
+            <a class="btn-r">Registrarse</a>
+        </div>  
+        <div class="logo-box">
+            <a class="btn-i">Ingresar</a>
+        </div> 
+    </div>
+    <!--FinNavBar-->
+    <!--Formulario-->
+    <div class="formulario" id="form">
+        <div class="formulario-cont">
+            <div class="input-m">
+                <p>Email: </p>
+                <input type="mail">
+            </div>
+            <div class="input-m">
+                <p>Contraseña: </p>
+                <input type="password">
+            </div>
+            <div class="logo-box">
+                <a class="btn-r">Ingresar</a>
+            </div> 
+            
+        </div>
+        <div class="cerrar" id="cerrar">
+            <p>X</p>
+        </div> 
+    </div>
+    <!--FinFormulario-->
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

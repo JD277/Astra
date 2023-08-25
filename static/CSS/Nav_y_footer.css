@@ -220,7 +220,7 @@ nav{
         border-bottom-color:#a239d3 ;
         color: #a239d3;
         background-color: transparent;
-        trasition: .2s;
+        transition: .2s;
     }
     .hamburguesa{
         display: flex;
